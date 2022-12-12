@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <targetframeworks>netcoreapp2.1</targetframeworks>
+    <StartupObject>WhiteSpaceWarrior.Program</StartupObject>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageTags>beautifier formatter clean-code</PackageTags>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <PackAsTool>true</PackAsTool>
+  </PropertyGroup>
+
+  <!--<PropertyGroup Condition="'$(TargetFramework)' == 'netcoreapp2.1'">
+    <PackAsTool>true</PackAsTool>
+  </PropertyGroup>-->
+
+  <ItemGroup>
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.3.4" />
+  </ItemGroup>
+</Project>
